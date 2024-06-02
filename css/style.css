@@ -1,0 +1,424 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #101010;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+span {
+    color: #47ad64;
+    font-weight: 600;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: black;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 2px -2px #47ad6448;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    padding: 5px 0px;
+    text-transform: capitalize;
+}
+
+header nav .logo {
+    color: floralwhite;
+    text-decoration: none;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    user-select: none;
+    font-weight: 600;
+    
+}
+
+.logo span {
+    color: #47ad64;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: auto;
+}
+
+.menu li a, i{
+    text-decoration: none;
+    color: floralwhite;
+    font-size: 1.25rem;
+}
+
+
+.menu li a{
+    position: relative;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 50%;
+    background-color: #47ad64;
+    bottom: 0;
+    left: 0;
+}
+
+.menu li a::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 0;
+    background-color: #47ad64;
+    bottom: 0;
+    left: 0;
+    transition: .3s;
+}
+
+.menu li a:hover::before {
+    width: 50%;
+}
+
+
+
+.toggle {
+    color: floralwhite;
+    font-size: 1.25rem;
+    display: none;
+    cursor: pointer;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #333333d4;
+    padding: 50px  20px;
+    backdrop-filter: blur(10px);
+    display: none;
+    list-style: none;
+}
+.containers {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.side li {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+}
+.side li a {
+    color: floralwhite;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+.side li:hover {
+    background-color: #ffffff44;
+    border-radius: 10px;
+}
+
+#close {
+    font-size: 1.50rem;
+    color: floralwhite;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.connect a{
+    background-color: #47ad64;
+    color: floralwhite;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.connect a:hover {
+    color: white;
+    background-color: #53ce76;
+}
+
+.content {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(/images/GettyImages-1260612733-1920x1152.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content div {
+    width: 60%;
+}
+
+.content h1 {
+    color: floralwhite;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.content p {
+    color: floralwhite;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-size: 1.1rem;
+}
+
+.second {
+    min-height: 100vh;
+    padding: 100px 0;
+    background-color: #101010;
+    box-shadow: 0 4px 2px -2px hwb(137 28% 32% / 0.282);
+}
+.second .card p{
+    font-size: 0;
+    text-align: center;
+}
+.title {
+    text-align: center;
+    color: floralwhite;
+    letter-spacing: 2px;
+    margin-bottom: 70px;
+    color: #47ad64;
+}
+.card {
+    background-color: transparent;
+    border: #47ad64 1px solid;
+    transition: .3s;
+    padding: 2px;
+}
+.second .card:hover{
+    p{
+        font-size: 1rem;
+        transition: 1s;
+    }
+
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.card-title {
+    color: #47ad64;
+}
+.card-text {
+    color: floralwhite;
+}
+.card-img-top {
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover;
+}
+.card-body {
+    flex: 1;
+}
+.carousel-images {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.title-tr {
+    color: #47ad64;
+    letter-spacing: 2px;
+}
+
+.p-tr {
+    color: floralwhite;
+    letter-spacing: 1px;
+}
+
+.second .active::after {
+    width: 0;
+}
+
+.about {
+    min-height: 70vh;
+    padding: 100px 0;
+    box-shadow: 0 4px 2px -2px #47ad6448;
+}
+.about h2 {
+    text-align: center;
+    color: floralwhite;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.about p span {
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about p {
+    width: 80%;
+    margin: 0 auto;
+    color: floralwhite;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    
+}
+
+.about .connect{
+    text-align: center;
+}
+
+.contact{
+    min-height: 50vh;
+    padding: 100px 0;
+    text-align: center;
+}
+.contact .row {
+    width: 90%;
+
+    margin: 0 auto;
+}
+.contact i {
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 05px 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -4px 2px -2px #47ad6448;
+}
+footer h3, footer p {
+    color: floralwhite;
+    font-size: 1.4rem;
+}
+footer p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+
+
+
+@media  screen and (max-width: 1023px) {
+    header nav{
+        width: 95%; 
+    }
+    .containers {
+        width: 95%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .content div {
+        width: 95%;
+        
+    }
+
+    .content h1 {
+        font-size: 1.6rem;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    .content p {
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.7;
+        
+    }
+
+    .connect {
+        display: none;
+    }
+
+    .side .connect {
+        display: block;
+        
+    }
+
+    .about p {
+        width: 100%;
+        text-align: left;
+    }
+
+    .contact .col-lg-3{
+        margin-bottom: 20px;
+    }
+    .contact .row {
+        width: 64%;
+    }
+
+    .second .connect {
+        display: block;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .side {
+        padding-top: 60px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .more-infos {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .content p {
+        text-align: left;
+    }
+    .card {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact .row {
+        width: 90%;
+    }
+}
+
+#top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}

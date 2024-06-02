@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/GettyImages-1260612733-1920x1152.jpg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: floralwhite;
+}
+.container {
+    border: 1px solid #47ad64;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.container form h3 {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.container form h3::before{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: #47ad64;
+    position: absolute;
+    bottom: 0;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container form .box span{
+    display: block;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.box input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #47ad64;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.gender {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.container a {
+    text-align: center;
+}
+.container i {
+    color: floralwhite;
+    background-color: #47ad64;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.box .cni {
+    text-transform: uppercase;
+}
+.box .cni::placeholder {
+    text-transform: capitalize;
+}
+select {
+    width: 100%;
+    outline: none;
+    border: 1px solid #47ad64;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+
+.check{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.check .cheked {
+    width: 40%;
+    margin: 0 auto;
+}
+
+
+.check .cheked:last-child{
+    text-align: center;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+#modele{
+    text-transform: capitalize;
+}
+
+button {
+    margin: 0 auto;
+    margin-top: 10px;
+    border: none;
+    padding: 5px 20px;
+    color: floralwhite;
+    background-color: #47ad64;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: floralwhite;
+    color: #47ad64;
+}
+
+.arrow {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#second-form{
+    display: none;
+    margin-top: 60px;
+}
+
+@media  screen and (max-width: 1023px){
+    .container{
+        margin-top: 40px;
+        width:40%;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        margin-top: 60px;
+        width: 60%;
+    }
+}
+@media (max-width: 700px) {
+    .container{
+        width: 95%;
+        
+    }
+}
