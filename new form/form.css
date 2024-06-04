@@ -6,15 +6,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Montserrat", sans-serif;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/GettyImages-1260612733-1920x1152.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/GettyImages-1260612733-1920x1152.jpg);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: floralwhite;
 }
+
 .container {
     border: 1px solid #47ad64;
     border-radius: 5px;
@@ -27,7 +29,7 @@ body {
     position: relative;
 }
 
-.container form h3::before{
+.container form h3::before {
     content: "";
     width: 30px;
     height: 1px;
@@ -42,7 +44,7 @@ body {
     justify-content: center;
 }
 
-.container form .box span{
+.container form .box span {
     display: block;
     margin-bottom: 0px;
     margin-top: 10px;
@@ -65,9 +67,11 @@ body {
     justify-content: center;
     gap: 20px;
 }
+
 .container a {
     text-align: center;
 }
+
 .container i {
     color: floralwhite;
     background-color: #47ad64;
@@ -79,12 +83,15 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
+
 .box .cni {
     text-transform: uppercase;
 }
+
 .box .cni::placeholder {
     text-transform: capitalize;
 }
+
 select {
     width: 100%;
     outline: none;
@@ -98,7 +105,7 @@ select {
 
 }
 
-.check{
+.check {
     display: flex;
     gap: 10px;
     margin-top: 20px;
@@ -114,7 +121,7 @@ select {
 }
 
 
-.check .cheked:last-child{
+.check .cheked:last-child {
     text-align: center;
 }
 
@@ -125,7 +132,8 @@ select {
     gap: 40px;
     margin-top: 20px;
 }
-#modele{
+
+#modele {
     text-transform: capitalize;
 }
 
@@ -138,7 +146,8 @@ button {
     background-color: #47ad64;
     border-radius: 10px;
 }
-button:hover{
+
+button:hover {
     background-color: floralwhite;
     color: #47ad64;
 }
@@ -149,15 +158,15 @@ button:hover{
     justify-content: center;
 }
 
-#second-form{
+#second-form {
     display: none;
     margin-top: 60px;
 }
 
-@media  screen and (max-width: 1023px){
-    .container{
+@media screen and (max-width: 1023px) {
+    .container {
         margin-top: 40px;
-        width:40%;
+        width: 40%;
     }
 }
 
@@ -167,9 +176,48 @@ button:hover{
         width: 60%;
     }
 }
+
 @media (max-width: 700px) {
-    .container{
+    .container {
         width: 95%;
-        
+
     }
+}
+
+#login {
+    padding: 25px;
+}
+
+#login h3 {
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+#login span {
+    margin-bottom: 5px;
+}
+
+#login button {
+    border: none;
+    background-color: #47ad64;
+    color: floralwhite;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+#login button:hover {
+    background-color: floralwhite;
+    color: #47ad64;
+}
+
+#login label {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#login label a {
+    color: #47ad64;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: underline;
 }

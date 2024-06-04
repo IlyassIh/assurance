@@ -217,6 +217,7 @@ header nav .logo {
     p{
         font-size: 1rem;
         transition: 1s;
+        text-align: justify;
     }
 
 }
@@ -251,6 +252,7 @@ header nav .logo {
 .p-tr {
     color: floralwhite;
     letter-spacing: 1px;
+    text-align: justify;
 }
 
 .second .active::after {
@@ -260,7 +262,7 @@ header nav .logo {
 .about {
     min-height: 70vh;
     padding: 100px 0;
-    box-shadow: 0 4px 2px -2px #47ad6448;
+    box-shadow: 0 4px 2px -2px rgba(71, 173, 100, 0.282);
 }
 .about h2 {
     text-align: center;
@@ -277,7 +279,7 @@ header nav .logo {
     width: 80%;
     margin: 0 auto;
     color: floralwhite;
-    text-align: center;
+    text-align: justify;
     font-size: 1.2rem;
     letter-spacing: 1px;
     margin-bottom: 20px;
@@ -293,7 +295,7 @@ header nav .logo {
     padding: 100px 0;
     text-align: center;
 }
-.contact .row {
+/* .contact .row {
     width: 90%;
 
     margin: 0 auto;
@@ -301,8 +303,56 @@ header nav .logo {
 .contact i {
     margin-top: 20px;
     font-size: 1.6rem;
+} */
+
+.contact form{
+    
+    width: 40%;
+    margin: 0 auto;
+    padding: 15px;
+    box-shadow: 0px 0px 19px 3px #47ad6475;
+    transition: .3s;
 }
 
+.contact form:hover{
+    transform: scale(1.1);
+}
+
+.contact form input{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(71, 173, 100);
+    background-color: transparent;
+    outline: none;
+    color: floralwhite;
+    text-transform: capitalize;
+    
+}
+
+.contact h2{
+    margin-bottom: 30px;
+}
+
+.contact form input::placeholder{
+    color: floralwhite;
+}
+
+.contact button{
+    background-color: #47ad64;
+    color: floralwhite;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.contact button:hover{
+    background-color: #53ce76;
+}
 footer {
     background-color: black;
     text-align: center;
@@ -320,6 +370,26 @@ footer p {
     font-size: 1rem;
 }
 
+
+#btn {
+    background-color: var(--green-color);
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+}
+
+#btn.show-btn {
+    display: block;
+}
+
+#btn i {
+    color: #47ad64;
+    font-size: 25px;
+    padding: 3px;
+}
 
 
 
@@ -367,14 +437,17 @@ footer p {
 
     .about p {
         width: 100%;
-        text-align: left;
+        text-align: justify;
     }
 
-    .contact .col-lg-3{
+    /* .contact .col-lg-3{
         margin-bottom: 20px;
-    }
-    .contact .row {
+    } */
+    /* .contact .row {
         width: 64%;
+    } */
+    .contact form{
+        width: 40%;
     }
 
     .second .connect {
@@ -403,6 +476,15 @@ footer p {
         width: 70%;
         margin: 0 auto;
     }
+
+    #btn {
+        right: 5px;
+    }
+
+    .contact form{
+        width: 60%;
+    }
+    
 }
 
 @media (max-width: 600px) {
@@ -411,8 +493,8 @@ footer p {
         margin: 0 auto;
     }
 
-    .contact .row {
-        width: 90%;
+    .contact form{
+        width: 95%;
     }
 }
 
@@ -422,3 +504,21 @@ footer p {
     left: 0;
     z-index: 999;
 }
+
+
+/* Update your CSS to include a class for the fade-in effect */
+body.fade-in {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

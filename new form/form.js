@@ -18,17 +18,17 @@ let saved = document.querySelector('#saved');
 
 
 
-right.addEventListener('click', function() {
+right.addEventListener('click', function () {
     second.style.display = 'block';
     one.style.display = 'none';
 })
 
-left.addEventListener('click', function(){
+left.addEventListener('click', function () {
     second.style.display = 'none';
     one.style.display = 'block';
 })
 
-saved.addEventListener('click', function(){
+saved.addEventListener('click', function () {
     alert(`    Votre Nom Et Prenom c'est: ${nom.value} ${prenom.value}
     Votre Cni: ${cni.value}
     Votre Marque: ${marque.value}
